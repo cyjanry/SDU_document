@@ -1,9 +1,9 @@
-% sdu-document.cls
+% sdu-tech.cls
 %
 %    A LaTex class for writing official documents.
 %    本LaTex Class用于正式文件的写作。
 %    
-%    作者：   J.QI
+%    作者：   J.Qi
 %    邮箱：   j.qi@sdu.edu.cn
 %    All right reserved. 未经许可不可公开。 
 %
@@ -15,6 +15,8 @@
 %    没有解决的问题：
 %    1. 标题上方的距离如何增加
 %    2. \xiaobiaosong 和 \fontsize{30pt} 同时使用的时候，不能加粗，而且还报错 Missing number, treated as zero.
+%
+%    2022/07/15     2.0   修正以上问题
 
 
 
@@ -97,6 +99,11 @@ right=3.8cm]
 
 
  
+
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% FONTS.
@@ -207,7 +214,7 @@ right=3.8cm]
 \begin{center}
         \begin{spacing}{4}%使用spacing命令调整行间距
         \vspace{15pt}
-                {\xiaobiaosong\bfseries\color{RED}\@title} 
+                {\xiaobiaosong\zihao{-0}\color{RED}\@title} 
         \vspace{12pt}
         \end{spacing}
 {\Large\fangsong{（第~\@issueNumber~期）}}\\ 
